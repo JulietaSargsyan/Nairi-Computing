@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NAIRI — AI compute, designed around data movement</title>
+  <meta name="description" content="NAIRI is designing a custom AI accelerator and the rack-scale system around it — built in Yerevan, Armenia.">
+  <meta name="theme-color" content="#e1effc">
+  <link rel="preload" href="assets/rack.jpg" as="image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M2 24 11 12l5 6 4-5 10 11' fill='none' stroke='%23111' stroke-width='2.4' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#top" class="logo" aria-label="NAIRI home">
+        <svg viewBox="0 0 56 24" aria-hidden="true"><path d="M1 22 15 4l8 10 6-7 16 15"/></svg>
+        <span>NAIRI</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+      <nav id="nav" class="nav">
+        <a href="#vision">Vision</a>
+        <a href="#system">System</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-img" src="assets/rack.jpg" width="780" height="820"
+           alt="NAIRI rack-scale AI system in a bright, sunlit room">
+      <div class="wrap hero-inner">
+        <p class="eyebrow">AI Infrastructure</p>
+        <h1>AI compute, designed around data&nbsp;movement.</h1>
+        <p class="lede">A custom accelerator and the rack-scale system around it — built in Yerevan.</p>
+        <a href="#contact" class="cta">
+          Contact
+          <svg viewBox="0 0 36 14" aria-hidden="true"><path d="M0 7h34M28 1l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <section id="vision" class="section">
+      <div class="wrap grid">
+        <p class="eyebrow">Vision</p>
+        <div class="prose reveal">
+          <p class="big">AI workloads have changed. Long-context and agentic inference now dominate, and their cost is set less by arithmetic than by moving data — between memory, chips and racks. Most silicon shipping today was designed before that shift.</p>
+          <p>NAIRI is designing for it from the start: an accelerator and rack-scale system co-designed as one, programmable without us, so the capacity it produces is as fungible as a GPU-hour.</p>
+          <p>We're building it in Armenia, which has trained chip designers since the early 2000s and has a growing machine-learning bench — the two halves this kind of system needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="system" class="section section-tint">
+      <div class="wrap grid">
+        <p class="eyebrow">System</p>
+        <ol class="features">
+          <li class="reveal">
+            <span class="num">01</span>
+            <h3>Chip and rack, designed together.</h3>
+            <p>Compute, memory hierarchy, interconnect and software are specified against one another rather than integrated after the fact.</p>
+          </li>
+          <li class="reveal">
+            <span class="num">02</span>
+            <h3>Built around data movement.</h3>
+            <p>Where the bytes live, how far they travel and how often — that's what the architecture is chosen against.</p>
+          </li>
+          <li class="reveal">
+            <span class="num">03</span>
+            <h3>Programmable without us.</h3>
+            <p>A system any team can target with their own models, not one that needs our engineers for every new workload.</p>
+          </li>
+          <li class="reveal">
+            <span class="num">04</span>
+            <h3>Proven in simulation first.</h3>
+            <p>Our in-house simulation environment lets us compare architectures against real workloads before committing to silicon.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="team" class="section">
+      <div class="wrap grid">
+        <p class="eyebrow">Team</p>
+        <div>
+          <div class="people">
+            <article class="person reveal">
+              <h3>Leo Heinsaar</h3>
+              <p class="role">Founder, CEO and CTO</p>
+              <p>Two decades building systems software, most recently rack-scale AI systems at a chip startup in London, and earlier contract work on Google's XLA compiler.</p>
+            </article>
+            <article class="person reveal">
+              <h3>Arman Musinyan</h3>
+              <p class="role">COO</p>
+              <p>Public-sector program management and political coordination, including NDI, IFES and the Washington-based World Security Institute.</p>
+            </article>
+          </div>
+          <!-- Advisors: add names and one-line credentials once each has agreed to be listed publicly. -->
+          <p class="advisors reveal"><span class="role">Advisors</span> To be announced.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="name" class="section section-tint">
+      <div class="wrap grid">
+        <p class="eyebrow">The name</p>
+        <p class="big reveal">Nairi is the name Assyrian inscriptions gave the Armenian Highlands, and the name of a pioneering computer designed in Yerevan in the 1960s.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="wrap grid">
+        <p class="eyebrow">Contact</p>
+        <div class="reveal">
+          <a class="mail" href="mailto:leo@heinsaar.com">leo@heinsaar.com</a>
+          <p class="meta">
+            <span>Yerevan, Armenia</span>
+            <span aria-hidden="true">·</span>
+            <!-- TODO: replace # with the LinkedIn page URL -->
+            <a href="#" rel="noopener" target="_blank">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year">2026</span> NAIRI</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
