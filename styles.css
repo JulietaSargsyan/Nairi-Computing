@@ -114,14 +114,14 @@ h1, h3, p { margin: 0; }
 }
 .hero-img {
   position: absolute;
-  right: 0;
+  right: clamp(0px, 6vw, 120px);
   bottom: 0;
   height: 90%;
   width: auto;
   max-width: none;
-  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 22%), linear-gradient(to bottom, transparent 0, #000 14%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 22%, #000 84%, transparent 100%), linear-gradient(to bottom, transparent 0, #000 14%);
   -webkit-mask-composite: source-in;
-  mask-image: linear-gradient(to right, transparent 0, #000 22%), linear-gradient(to bottom, transparent 0, #000 14%);
+  mask-image: linear-gradient(to right, transparent 0, #000 22%, #000 84%, transparent 100%), linear-gradient(to bottom, transparent 0, #000 14%);
   mask-composite: intersect;
   animation: fade 1.4s ease-out both;
 }
@@ -263,6 +263,7 @@ h1, h3, p { margin: 0; }
   .hero-inner { padding-top: 140px; padding-bottom: 8px; }
   .hero-img {
     position: relative;
+    right: auto;
     order: 2;
     height: auto;
     width: 100%;
