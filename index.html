@@ -1148,7 +1148,7 @@
       </nav>
       <div class="mfoot">
         <a href="#contact" class="mcta">Contact us</a>
-        <span class="cap"><b>Email</b><span class="sep">-</span>leo@heinsaar.com</span>
+        <span class="cap"><b>Email</b><span class="sep">-</span>info@nairisys.com</span>
         <span class="cap">Yerevan, Armenia</span>
       </div>
     </div>
@@ -1291,7 +1291,7 @@
         </div>
         <div class="contact-card reveal">
           <div class="mail-row">
-            <a class="mail" id="mail" href="mailto:leo@nairisys.com">leo@nairisys.com</a>
+            <a class="mail" id="mail" href="mailto:info@nairisys.com">info@nairisys.com</a>
             <button class="copy" id="copy" type="button" aria-label="Copy email" title="Copy email"><svg
                 viewBox="0 0 24 24" aria-hidden="true">
                 <rect x="8" y="8" width="12" height="12" rx="2" />
@@ -1336,7 +1336,7 @@
       btn.addEventListener('click', () => {
         const done = () => { btn.innerHTML = OK; btn.setAttribute('aria-label', 'Copied'); setTimeout(() => { btn.innerHTML = ICON; btn.setAttribute('aria-label', 'Copy email') }, 1600) };
         const fallback = () => { const r = document.createRange(); r.selectNodeContents(document.getElementById('mail')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.title = 'Selected, press Cmd+C' };
-        try { navigator.clipboard.writeText('info@heinsaar.com').then(done, fallback) } catch (e) { fallback() }
+        try { navigator.clipboard.writeText('info@nairisys.com').then(done, fallback) } catch (e) { fallback() }
       });
 
       document.getElementById('year').textContent = new Date().getFullYear();
