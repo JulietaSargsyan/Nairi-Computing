@@ -972,15 +972,16 @@
       height: 1.6px;
       border-radius: 2px;
       background: var(--ink);
-      transition: transform .3s cubic-bezier(.2, .7, .2, 1), top .3s cubic-bezier(.2, .7, .2, 1)
+      top: 21px;
+      transition: transform .3s cubic-bezier(.2, .7, .2, 1), top .3s cubic-bezier(.2, .7, .2, 1), opacity .2s
     }
 
     .burger span:first-child {
-      top: 17px
+      top: 15px
     }
 
     .burger span:last-child {
-      top: 25px
+      top: 27px
     }
 
     .menu-open .burger {
@@ -998,6 +999,10 @@
 
     .menu-open .burger span:last-child {
       transform: rotate(-45deg)
+    }
+
+    .menu-open .burger span:nth-child(2) {
+      opacity: 0
     }
 
     .mmenu {
@@ -1147,7 +1152,7 @@
       </nav>
       <a href="#contact" class="head-cta">Contact us</a>
       <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false"
-        aria-controls="mmenu"><span></span><span></span></button>
+        aria-controls="mmenu"><span></span><span></span><span></span></button>
     </div>
     <div class="mmenu" id="mmenu" hidden>
       <nav class="mlinks" aria-label="Menu">
