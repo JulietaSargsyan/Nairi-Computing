@@ -1336,7 +1336,7 @@
       btn.addEventListener('click', () => {
         const done = () => { btn.innerHTML = OK; btn.setAttribute('aria-label', 'Copied'); setTimeout(() => { btn.innerHTML = ICON; btn.setAttribute('aria-label', 'Copy email') }, 1600) };
         const fallback = () => { const r = document.createRange(); r.selectNodeContents(document.getElementById('mail')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.title = 'Selected, press Cmd+C' };
-        try { navigator.clipboard.writeText('leo@heinsaar.com').then(done, fallback) } catch (e) { fallback() }
+        try { navigator.clipboard.writeText('info@heinsaar.com').then(done, fallback) } catch (e) { fallback() }
       });
 
       document.getElementById('year').textContent = new Date().getFullYear();
