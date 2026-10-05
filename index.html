@@ -787,12 +787,19 @@
     }
 
     .advisors {
-      margin-top: 24px;
+      margin-top: 72px;
+      margin-bottom: 28px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
       display: flex;
       align-items: center;
       gap: 12px;
-      color: var(--ink-2);
-      font-size: 14px
+      color: var(--ink-2)
+    }
+
+    .advisors .cap {
+      font-size: clamp(20px, 2.4vw, 28px);
+      line-height: 1.2
     }
 
     /* The name */
